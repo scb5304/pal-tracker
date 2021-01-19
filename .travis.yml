@@ -1,6 +1,4 @@
 language: java
-jdk:
-  - oraclejdk11
 script: ./gradlew build
 deploy:
   provider: cloudfoundry
