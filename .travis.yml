@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk11
+script: ./gradlew build
+deploy:
+  provider: cloudfoundry
+  username: $CF_USERNAME
+  password: $CF_PASSWORD
+  api: https://api.sys.evans.pal.pivotal.io
+  organization: $CF_ORG
+  space: $CF_SPACE
+  manifest: manifest.yml
+  app_name: pal-tracker
