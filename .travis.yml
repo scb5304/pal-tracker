@@ -6,7 +6,7 @@ deploy:
   provider: cloudfoundry
   username: $CF_USERNAME
   password: $CF_PASSWORD
-  api: https://api.sys.evans.pal.pivotal.io
+  api: $CF_API_URL
   organization: $CF_ORG
   space: $CF_SPACE
   manifest: manifest.yml
