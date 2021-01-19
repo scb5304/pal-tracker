@@ -26,7 +26,7 @@ public class TimeEntryController {
         if (timeEntry != null) {
             return ResponseEntity.ok(timeEntry);
         } else {
-            return ResponseEntity.status(404).build();
+            return ResponseEntity.notFound().build();
         }
     }
 
@@ -42,7 +42,7 @@ public class TimeEntryController {
         if (updated != null) {
             return ResponseEntity.ok(updated);
         } else {
-            return ResponseEntity.status(404).build();
+            return ResponseEntity.notFound().build();
         }
     }
 
