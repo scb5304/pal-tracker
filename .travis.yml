@@ -9,3 +9,5 @@ deploy:
   space: $CF_SPACE
   manifest: manifest.yml
   app_name: pal-tracker
+  on:
+    all_branches: true
